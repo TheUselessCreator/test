@@ -1,24 +1,20 @@
 
-
----
-
-````markdown
 # Discord Bot Hosting Platform - Setup Guide
 
 ## 📋 Prerequisites
 Before setting up the project, make sure you have the following installed:
-
+````
 - [Node.js (v18 or higher)](https://nodejs.org/)  
 - npm (comes with Node.js)  
 - [Visual Studio Code](https://code.visualstudio.com/)  
 - [Git (optional but recommended)](https://git-scm.com/)  
-
+````
 
 
 ## 🚀 Initial Setup
 
 ### 1️⃣ Create Project Directory
-```bash
+````
 mkdir discord-bot-hosting-platform
 cd discord-bot-hosting-platform
 ````
@@ -44,7 +40,7 @@ discord-bot-hosting-platform/
 
 Open terminal in Visual Studio Code (Ctrl + \`) and run:
 
-```bash
+```
 npm install
 ```
 
@@ -90,7 +86,7 @@ To find your Discord User ID:
 
 ### Development (Recommended)
 
-```bash
+```
 npm run dev
 ```
 
@@ -103,7 +99,7 @@ This will:
 
 ### Individual
 
-```bash
+```
 npm run dev:client  # Frontend only
 npm run dev:server  # Backend only
 ```
@@ -112,13 +108,13 @@ npm run dev:server  # Backend only
 
 ### Build for production:
 
-```bash
+```
 npm run build
 ```
 
 Then preview:
 
-```bash
+```
 npm run preview
 ```
 
@@ -193,13 +189,13 @@ discord-bot-hosting-platform/
 
 ### Port already in use:
 
-```bash
+```
 npx kill-port 3001 5173
 ```
 
 ### Dependencies not installing:
 
-```bash
+```
 npm cache clean --force
 rm -rf node_modules package-lock.json
 npm install
@@ -207,7 +203,7 @@ npm install
 
 ### TypeScript errors:
 
-```bash
+```
 Ctrl + Shift + P > "TypeScript: Restart TS Server"
 ```
 
@@ -236,7 +232,7 @@ Ctrl + Shift + P > "TypeScript: Restart TS Server"
 
 ## 🚀 Production Deployment
 
-```bash
+```
 npm run build
 ```
 
@@ -244,7 +240,7 @@ npm run build
 * Set environment variables.
 * Use **pm2** to run backend:
 
-```bash
+```
 npm install -g pm2
 pm2 start server/index.ts --name "bot-hosting-backend"
 ```
@@ -265,7 +261,7 @@ If you encounter issues:
 ✅ The platform is now ready for development!
 Start it with:
 
-```bash
+```
 npm run dev
 ```
 
