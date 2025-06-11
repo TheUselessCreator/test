@@ -267,6 +267,5 @@ npm run dev
 
 and navigate to [http://localhost:5173](http://localhost:5173) to see your **Discord Bot Hosting Platform** in action.
 
-```
 
 
